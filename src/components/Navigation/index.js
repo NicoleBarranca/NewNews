@@ -1,9 +1,13 @@
 export default function Navigation() {
   return (
-    <div>
-      <h1>NewNews</h1>
-      <input></input>
-      <button>Search</button>
+    <div className="navBar">
+      <h1>
+        New<span>News</span>
+      </h1>
+      <form>
+        <input id="search" placeholder="Find articles.."></input>
+        <button id="searchBtn">Search</button>
+      </form>
     </div>
   );
 }

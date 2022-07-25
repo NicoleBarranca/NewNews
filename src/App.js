@@ -13,24 +13,6 @@ import Content from "./components/Content";
 // Refactor
 
 function App() {
-  // useEffect(() => {
-  //   fetch(
-  //     `https://newsapi.org/v2/top-headlines?country=us&apiKey=2e1996b8e2854c41b4fc92f10d3a631e`
-  //   )
-  //     .then((response) => {
-  //       if (!response.ok) {
-  //         throw new Error(
-  //           `HTTP error has occured 😑 The status is ${response.status} `
-  //         );
-  //       }
-  //       return response.json();
-  //     })
-  //     .then((data) => console.log(data))
-  //     .catch((err) => {
-  //       console.log(err.message);
-  //     });
-  // }, []);
-
   const [category, setCategory] = useState("general");
   const [newsArray, setNewsArray] = useState([]);
   const [newsResults, setNewsResults] = useState();

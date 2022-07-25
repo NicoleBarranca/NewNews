@@ -16,7 +16,7 @@ function App() {
   const newsApi = async () => {
     try {
       const news = await axios.get(
-        `https://newsapi.org/v2/everything?q=apple&from=2022-07-24&to=2022-07-24&sortBy=popularity&apiKey=2e1996b8e2854c41b4fc92f10d3a631e`
+        `https://newsapi.org/v2/top-headlines?country=us&apiKey=2e1996b8e2854c41b4fc92f10d3a631e`
       );
       setNewsArray(news.data.articles);
       setNewsResults(news.data.totalResults);

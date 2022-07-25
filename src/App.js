@@ -4,11 +4,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Content from "./components/Content";
 // useContext hook to store data to state
-// Not Required* Results in news feed should be paginated (15 results at a time)
 // Implement a sorting algorithm to sort data (alphabetically || based on published date)
 // Articles in the feed should be searchable and sortable.
-// Optional styled card component
-// Clean UI
 // Refactor
 
 function App() {
@@ -35,6 +32,7 @@ function App() {
   return (
     <div>
       <Navigation />
+
       <Content newsArray={newsArray} newsResults={newsResults} />
       <div className="copyRight">
         <p>&copy;{new Date().getFullYear()} NewNews - All Rights Reserved.</p>

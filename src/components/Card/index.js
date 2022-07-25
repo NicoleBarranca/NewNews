@@ -1,7 +1,9 @@
 import React from "react";
+import moment from "moment";
 
 function Card({ newsItem }) {
   console.log(newsItem);
+
   return (
     <div className="articleCard">
       <img
@@ -11,21 +13,23 @@ function Card({ newsItem }) {
       />
       <div className="articleText">
         <span className="title">{newsItem.title}</span>
+
         <span className="author">
           <a href={newsItem.url} target="_blank" rel="noreferrer">
-            <p>Read article</p>
+            <b>Article </b>
           </a>
-          {/* add published date */}
           <span className="authorName">
-            by {newsItem.author ? newsItem.author : "unknown"}
+            by {newsItem.author ? newsItem.author : "unknown"} |{" "}
+            {moment(newsItem.publishedAt).format("dddd, MMMM Do YYYY")}
           </span>
         </span>
+
         <div className="lowerCard">
           <div className="description">{newsItem.description}</div>
-          <span>
-            read more at{" "}
+          <span className="source">
+            Read more at
             <a href={newsItem.url} target="_blank" rel="noreferrer">
-              {newsItem.source.name}
+              <b> {newsItem.source.name}</b>
             </a>{" "}
           </span>
         </div>

@@ -1,6 +1,5 @@
 import "./App.css";
 import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Content from "./components/Content";
@@ -37,7 +36,9 @@ function App() {
     <div>
       <Navigation />
       <Content newsArray={newsArray} newsResults={newsResults} />
-      <Footer />
+      <div className="copyRight">
+        <p>&copy;{new Date().getFullYear()} NewNews - All Rights Reserved.</p>
+      </div>
     </div>
   );
 }

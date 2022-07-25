@@ -43,6 +43,12 @@ body {
   color: #ffffff;
 }
 
+.copyRight {
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+}
+
 .articleCard {
   background-color: #000;
   color: #fff;

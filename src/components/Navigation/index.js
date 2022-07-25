@@ -7,6 +7,7 @@ export default function Navigation() {
       <form>
         <input id="search" placeholder="Find articles.."></input>
         <button id="searchBtn">Search</button>
+        <button id="resetBtn">Reset</button>
       </form>
     </div>
   );

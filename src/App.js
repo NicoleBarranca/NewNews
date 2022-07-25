@@ -6,7 +6,6 @@ import Content from "./components/Content";
 // useContext hook to store data to state
 // Implement a sorting algorithm to sort data (alphabetically || based on published date)
 // Articles in the feed should be searchable and sortable.
-// Refactor
 
 function App() {
   const [category, setCategory] = useState("general");
@@ -29,6 +28,13 @@ function App() {
     newsApi();
   }, [newsResults, category]);
 
+  //LOGIC for searching and resetting
+
+  // const handleReset = () => {};
+  // const handleSearch = async (e) => {
+  //   e.preventDefault()
+  //   return await axios.get
+  // };
   return (
     <div>
       <Navigation />
